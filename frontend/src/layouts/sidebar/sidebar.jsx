@@ -11,11 +11,13 @@ import LayersIcon from '@mui/icons-material/Layers';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useDemoRouter } from '@toolpad/core/internal';
+import Phome from '../../pages/Phome/Phome';
 
+// Definir la navegación
 const NAVIGATION = [
   {
     kind: 'header',
-    title: 'Main items',
+    title: 'Elementos Principales',
   },
   {
     segment: 'dashboard',
@@ -23,8 +25,8 @@ const NAVIGATION = [
     icon: <DashboardIcon />,
   },
   {
-    segment: 'orders',
-    title: 'Orders',
+    segment: 'entregas',
+    title: 'Entregas',
     icon: <ShoppingCartIcon />,
   },
   {
@@ -32,32 +34,33 @@ const NAVIGATION = [
   },
   {
     kind: 'header',
-    title: 'Analytics',
+    title: 'Análisis',
   },
   {
-    segment: 'reports',
-    title: 'Reports',
+    segment: 'informes',
+    title: 'Informes',
     icon: <BarChartIcon />,
     children: [
       {
-        segment: 'sales',
-        title: 'Sales',
+        segment: 'rendimiento-repartidores',
+        title: 'Rendimiento de Repartidores',
         icon: <DescriptionIcon />,
       },
       {
-        segment: 'traffic',
-        title: 'Traffic',
+        segment: 'eficiencia-rutas',
+        title: 'Eficiencia de Rutas',
         icon: <DescriptionIcon />,
       },
     ],
   },
   {
-    segment: 'integrations',
-    title: 'Integrations',
+    segment: 'clientes',
+    title: 'Clientes',
     icon: <LayersIcon />,
   },
 ];
 
+// Definir el tema
 const demoTheme = createTheme({
   cssVariables: {
     colorSchemeSelector: 'data-toolpad-color-scheme',
@@ -74,55 +77,59 @@ const demoTheme = createTheme({
   },
 });
 
-function DemoPageContent({ pathname }) {
+function DashboardContent({ pathname }) {
   return (
     <Box
       sx={{
         py: 4,
-        display: 'flex',
+        px: 3,
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
+        width: '100%',
       }}
     >
-      <Typography>Dashboard content for {pathname}</Typography>
+      {/* Renderizar contenido dinámico solo si está en /dashboard */}
+      {pathname === '/dashboard' ? (
+        <Phome />
+      ) : (
+        <Typography variant="h5" sx={{ mb: 2 }}>
+          {`Sección: ${pathname}`}
+        </Typography>
+      )}
     </Box>
   );
 }
 
-DemoPageContent.propTypes = {
+DashboardContent.propTypes = {
   pathname: PropTypes.string.isRequired,
 };
 
 function DashboardLayoutBasic(props) {
   const { window } = props;
-
   const router = useDemoRouter('/dashboard');
-
-  // Remove this const when copying and pasting into your project.
   const demoWindow = window !== undefined ? window() : undefined;
 
   return (
-    // preview-start
     <AppProvider
       navigation={NAVIGATION}
       router={router}
       theme={demoTheme}
       window={demoWindow}
+      branding={{
+        logo: null,
+        title: 'Mi Dashboard Personalizado',
+        homeUrl: '/dashboard',
+      }}
     >
       <DashboardLayout>
-        <DemoPageContent pathname={router.pathname} />
+        <DashboardContent pathname={router.pathname} />
       </DashboardLayout>
     </AppProvider>
-    // preview-end
   );
 }
 
 DashboardLayoutBasic.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * Remove this when copying and pasting into your project.
-   */
   window: PropTypes.func,
 };
 

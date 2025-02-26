@@ -1,0 +1,188 @@
+{
+    "clientes": [
+      {
+        "id": 1,
+        "nombre": "Carlos Pérez",
+        "ubicacion": "Madrid",
+        "email": "carlos.perez@gmail.com",
+        "telefono": "+34 612 345 678",
+        "entregas": [
+          {
+            "id": 101,
+            "producto": "Laptop Dell",
+            "fecha_entrega": "2025-02-10",
+            "estado": "Entregado",
+            "repartidor_id": 3
+          },
+          {
+            "id": 102,
+            "producto": "Smartphone Samsung",
+            "fecha_entrega": "2025-02-15",
+            "estado": "En curso",
+            "repartidor_id": 2
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "nombre": "Ana Gómez",
+        "ubicacion": "Barcelona",
+        "email": "ana.gomez@yahoo.com",
+        "telefono": "+34 699 987 654",
+        "entregas": [
+          {
+            "id": 103,
+            "producto": "Cámara Canon",
+            "fecha_entrega": "2025-02-05",
+            "estado": "Entregado",
+            "repartidor_id": 1
+          },
+          {
+            "id": 104,
+            "producto": "Tablet iPad",
+            "fecha_entrega": "2025-02-18",
+            "estado": "En curso",
+            "repartidor_id": 4
+          }
+        ]
+      }
+    ],
+    "repartidores": [
+      {
+        "id": 1,
+        "nombre": "Juan Pérez",
+        "total_entregas": 15,
+        "tiempo_promedio": "30 min",
+        "satisfaccion_promedio": 4.7,
+        "ruta": "Madrid - Barcelona"
+      },
+      {
+        "id": 2,
+        "nombre": "Laura García",
+        "total_entregas": 20,
+        "tiempo_promedio": "35 min",
+        "satisfaccion_promedio": 4.6,
+        "ruta": "Sevilla - Valencia"
+      },
+      {
+        "id": 3,
+        "nombre": "Carlos Rodríguez",
+        "total_entregas": 12,
+        "tiempo_promedio": "28 min",
+        "satisfaccion_promedio": 4.8,
+        "ruta": "Madrid - Valencia"
+      },
+      {
+        "id": 4,
+        "nombre": "Marta Fernández",
+        "total_entregas": 18,
+        "tiempo_promedio": "32 min",
+        "satisfaccion_promedio": 4.5,
+        "ruta": "Barcelona - Valencia"
+      },
+      {
+        "id": 5,
+        "nombre": "Pedro Jiménez",
+        "total_entregas": 25,
+        "tiempo_promedio": "25 min",
+        "satisfaccion_promedio": 4.9,
+        "ruta": "Sevilla - Madrid"
+      }
+    ],
+    "entregas": [
+      {
+        "id": 1,
+        "cliente_id": 1,
+        "producto": "Laptop Dell",
+        "fecha_entrega": "2025-02-10",
+        "estado": "Entregado",
+        "repartidor_id": 3
+      },
+      {
+        "id": 2,
+        "cliente_id": 2,
+        "producto": "Cámara Canon",
+        "fecha_entrega": "2025-02-05",
+        "estado": "Entregado",
+        "repartidor_id": 1
+      },
+      {
+        "id": 3,
+        "cliente_id": 3,
+        "producto": "Auriculares Bose",
+        "fecha_entrega": "2025-02-12",
+        "estado": "Entregado",
+        "repartidor_id": 5
+      },
+      {
+        "id": 4,
+        "cliente_id": 4,
+        "producto": "Portátil HP",
+        "fecha_entrega": "2025-02-02",
+        "estado": "Entregado",
+        "repartidor_id": 2
+      },
+      {
+        "id": 5,
+        "cliente_id": 1,
+        "producto": "Smartphone Samsung",
+        "fecha_entrega": "2025-02-15",
+        "estado": "En curso",
+        "repartidor_id": 2
+      },
+      {
+        "id": 6,
+        "cliente_id": 2,
+        "producto": "Tablet iPad",
+        "fecha_entrega": "2025-02-18",
+        "estado": "En curso",
+        "repartidor_id": 4
+      },
+      {
+        "id": 7,
+        "cliente_id": 3,
+        "producto": "Smartwatch Garmin",
+        "fecha_entrega": "2025-02-20",
+        "estado": "En curso",
+        "repartidor_id": 3
+      }
+    ],
+    "rutas": [
+      {
+        "id": 1,
+        "origen": "Madrid",
+        "destino": "Barcelona",
+        "distancia_km": 620,
+        "tiempo_estimado": "6 horas"
+      },
+      {
+        "id": 2,
+        "origen": "Sevilla",
+        "destino": "Valencia",
+        "distancia_km": 350,
+        "tiempo_estimado": "4 horas"
+      },
+      {
+        "id": 3,
+        "origen": "Madrid",
+        "destino": "Valencia",
+        "distancia_km": 350,
+        "tiempo_estimado": "3.5 horas"
+      },
+      {
+        "id": 4,
+        "origen": "Barcelona",
+        "destino": "Valencia",
+        "distancia_km": 350,
+        "tiempo_estimado": "3.5 horas"
+      },
+      {
+        "id": 5,
+        "origen": "Sevilla",
+        "destino": "Madrid",
+        "distancia_km": 530,
+        "tiempo_estimado": "5.5 horas"
+      }
+    ]
+  }
+  
