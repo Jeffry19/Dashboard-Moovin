@@ -6,6 +6,7 @@ function Phome() {
   return (
     <div>
      <Home/>
+     
      <MyChart/>
     </div>
   )

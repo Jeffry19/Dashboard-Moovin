@@ -13,6 +13,10 @@ import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { useDemoRouter } from '@toolpad/core/internal';
 import Phome from '../../pages/Phome/Phome';
 
+import DataTable from '../../components/Table/Table';
+import ClientesPorMesChart from '../../components/Echart/Grafica_porfecha';
+import GraficoEntregas from '../../components/Echart/Grafica_entregas';
+
 // Definir la navegación
 const NAVIGATION = [
   {
@@ -91,12 +95,28 @@ function DashboardContent({ pathname }) {
     >
       {/* Renderizar contenido dinámico solo si está en /dashboard */}
       {pathname === '/dashboard' ? (
+        
         <Phome />
-      ) : (
-        <Typography variant="h5" sx={{ mb: 2 }}>
-          {`Sección: ${pathname}`}
-        </Typography>
-      )}
+      ) :null},
+        {pathname === '/clientes' ? (
+          <>
+          <div>
+          <DataTable/>,
+          <br /><br />
+
+        <div>
+        <ClientesPorMesChart/>
+         </div>
+       </div>
+       </> 
+      ) :null},
+        {pathname === '/entregas' ? (
+          <>
+          <GraficoEntregas/>
+          </>
+        
+        
+      ) :null},
     </Box>
   );
 }
@@ -117,8 +137,8 @@ function DashboardLayoutBasic(props) {
       theme={demoTheme}
       window={demoWindow}
       branding={{
-        logo: null,
-        title: 'Mi Dashboard Personalizado',
+        logo: <img src='https://www.moovin.me/wp-content/uploads/elementor/thumbs/logotipo-p0w942n4ng4q5m2y5cjvsoaf8c2dq0y637cw4b34lm.png'></img>,
+        title: "",
         homeUrl: '/dashboard',
       }}
     >

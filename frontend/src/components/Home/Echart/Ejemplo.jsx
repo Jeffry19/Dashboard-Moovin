@@ -1,18 +1,19 @@
-import ReactECharts from 'echarts-for-react';
+import ReactECharts from "echarts-for-react";
+
 
 const options = {
   title: {
-    text: 'Ejemplo de Gráfico',
+    text: "Ejemplo de Gráfico",
   },
   tooltip: {},
   xAxis: {
-    data: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes'],
+    data: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes"],
   },
   yAxis: {},
   series: [
     {
-      name: 'Ventas',
-      type: 'bar',
+      name: "Ventas",
+      type: "bar",
       data: [5, 20, 36, 10, 10],
     },
   ],
