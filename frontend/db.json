@@ -1,11 +1,11 @@
 {
-  "clientes": [
+"clientes": [
     {
       "id": 1,
       "nombre": "Carlos Pérez",
-      "ubicacion": "Madrid",
+      "ubicacion": "San José",
       "email": "carlos.perez@gmail.com",
-      "telefono": "+34 612 345 678",
+      "telefono": "+506 612 345 678",
       "fecha_registro": "2024-11-05",
       "entregas": [
         { "id": 101, "producto": "Laptop Dell", "fecha_entrega": "2024-12-01", "estado": "Entregado", "repartidor_id": 3 },
@@ -15,9 +15,9 @@
     {
       "id": 2,
       "nombre": "Ana Gómez",
-      "ubicacion": "Barcelona",
+      "ubicacion": "Alajuela",
       "email": "ana.gomez@yahoo.com",
-      "telefono": "+34 699 987 654",
+      "telefono": "+506 699 987 654",
       "fecha_registro": "2024-11-18",
       "entregas": [
         { "id": 103, "producto": "Cámara Canon", "fecha_entrega": "2025-01-05", "estado": "Entregado", "repartidor_id": 1 },
@@ -27,9 +27,9 @@
     {
       "id": 3,
       "nombre": "Luis Fernández",
-      "ubicacion": "Valencia",
+      "ubicacion": "Heredia",
       "email": "luis.fernandez@gmail.com",
-      "telefono": "+34 688 123 456",
+      "telefono": "+506 688 123 456",
       "fecha_registro": "2024-12-10",
       "entregas": [
         { "id": 105, "producto": "Monitor LG", "fecha_entrega": "2025-01-10", "estado": "Entregado", "repartidor_id": 2 }
@@ -38,9 +38,9 @@
     {
       "id": 4,
       "nombre": "María López",
-      "ubicacion": "Sevilla",
+      "ubicacion": "Cartago",
       "email": "maria.lopez@hotmail.com",
-      "telefono": "+34 655 321 789",
+      "telefono": "+506 655 321 789",
       "fecha_registro": "2024-12-22",
       "entregas": [
         { "id": 106, "producto": "Teclado Razer", "fecha_entrega": "2025-02-02", "estado": "En curso", "repartidor_id": 3 }
@@ -49,277 +49,550 @@
     {
       "id": 5,
       "nombre": "Javier Ortega",
-      "ubicacion": "Zaragoza",
+      "ubicacion": "San José",
       "email": "javier.ortega@outlook.com",
-      "telefono": "+34 677 654 321",
+      "telefono": "+506 677 654 321",
       "fecha_registro": "2025-01-05",
       "entregas": [
         { "id": 107, "producto": "Impresora HP", "fecha_entrega": "2025-01-20", "estado": "Entregado", "repartidor_id": 5 },
         { "id": 108, "producto": "Auriculares Bose", "fecha_entrega": "2025-02-10", "estado": "En curso", "repartidor_id": 1 }
       ]
     },
-    
-    { "id": 6, "nombre": "Sofía Rivas", "ubicacion": "Málaga", "email": "sofia.rivas@gmail.com", "telefono": "+34 644 123 456", "fecha_registro": "2025-01-10", "entregas": [] },
-    { "id": 7, "nombre": "Manuel Díaz", "ubicacion": "Murcia", "email": "manuel.diaz@yahoo.com", "telefono": "+34 633 222 333", "fecha_registro": "2025-01-15", "entregas": [ { "id": 109, "producto": "Cafetera Nespresso", "fecha_entrega": "2025-02-05", "estado": "Entregado", "repartidor_id": 3 } ] },
-    { "id": 8, "nombre": "Carmen Torres", "ubicacion": "Alicante", "email": "carmen.torres@hotmail.com", "telefono": "+34 644 123 789", "fecha_registro": "2025-01-20", "entregas": [] },
-    { "id": 9, "nombre": "Fernando Ruiz", "ubicacion": "Valladolid", "email": "fernando.ruiz@gmail.com", "telefono": "+34 622 987 654", "fecha_registro": "2025-01-25", "entregas": [] },
-    { "id": 10, "nombre": "Patricia Herrera", "ubicacion": "Córdoba", "email": "patricia.herrera@gmail.com", "telefono": "+34 699 111 222", "fecha_registro": "2025-02-01", "entregas": [ { "id": 110, "producto": "Reloj Inteligente Garmin", "fecha_entrega": "2025-02-15", "estado": "En curso", "repartidor_id": 2 } ] },
-    
-    { "id": 11, "nombre": "Roberto Castro", "ubicacion": "Gijón", "email": "roberto.castro@hotmail.com", "telefono": "+34 688 555 777", "fecha_registro": "2025-02-05", "entregas": [] },
-    { "id": 12, "nombre": "Silvia Morales", "ubicacion": "Santander", "email": "silvia.morales@outlook.com", "telefono": "+34 633 777 888", "fecha_registro": "2025-02-08", "entregas": [] },
-    { "id": 13, "nombre": "Alberto Vargas", "ubicacion": "Tenerife", "email": "alberto.vargas@gmail.com", "telefono": "+34 677 444 555", "fecha_registro": "2025-02-10", "entregas": [] },
-    { "id": 14, "nombre": "Beatriz Navarro", "ubicacion": "Las Palmas", "email": "beatriz.navarro@yahoo.com", "telefono": "+34 611 222 333", "fecha_registro": "2025-02-12", "entregas": [] },
-    { "id": 15, "nombre": "Daniel Ríos", "ubicacion": "Granada", "email": "daniel.rios@hotmail.com", "telefono": "+34 655 888 999", "fecha_registro": "2025-02-15", "entregas": [ { "id": 111, "producto": "Aspiradora Dyson", "fecha_entrega": "2025-02-25", "estado": "En curso", "repartidor_id": 4 } ]},  {
-      "id": 16,
-      "nombre": "Hugo Martínez",
-      "ubicacion": "Toledo",
-      "email": "hugo.martinez@gmail.com",
-      "telefono": "+34 666 987 321",
-      "fecha_registro": "2024-11-05",
+    {
+      "id": 6,
+      "nombre": "Sofía Rivas",
+      "ubicacion": "San José",
+      "email": "sofia.rivas@gmail.com",
+      "telefono": "+506 644 123 456",
+      "fecha_registro": "2025-01-10",
+      "entregas": [{ "id": 111, "producto": "Smart TV Samsung", "fecha_entrega": "2025-02-18", "estado": "En curso", "repartidor_id": 5 }
+    ]
+    },
+    {
+      "id": 7,
+      "nombre": "Manuel Díaz",
+      "ubicacion": "Alajuela",
+      "email": "manuel.diaz@yahoo.com",
+      "telefono": "+506 633 222 333",
+      "fecha_registro": "2025-01-15",
       "entregas": [
-        {
-          "id": 111,
-          "producto": "Auriculares Sony",
-          "fecha_entrega": "2025-02-20",
-          "estado": "En curso",
-          "repartidor_id": 4
-        }
+        { "id": 109, "producto": "Cafetera Nespresso", "fecha_entrega": "2025-02-05", "estado": "Entregado", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Carmen Torres",
+      "ubicacion": "Heredia",
+      "email": "carmen.torres@hotmail.com",
+      "telefono": "+506 644 123 789",
+      "fecha_registro": "2025-01-20",
+      "entregas": [  { "id": 112, "producto": "Parlante JBL", "fecha_entrega": "2025-02-25", "estado": "Entregado", "repartidor_id": 4 }]
+    },
+    {
+      "id": 9,
+      "nombre": "Fernando Ruiz",
+      "ubicacion": "Cartago",
+      "email": "fernando.ruiz@gmail.com",
+      "telefono": "+506 622 987 654",
+      "fecha_registro": "2025-01-25",
+      "entregas": [  { "id": 113, "producto": "Consola PlayStation 5", "fecha_entrega": "2025-03-02", "estado": "En curso", "repartidor_id": 3 },
+      { "id": 114, "producto": "Volante Logitech G29", "fecha_entrega": "2025-03-10", "estado": "Entregado", "repartidor_id": 1 }]
+    },
+    {
+      "id": 10,
+      "nombre": "Patricia Herrera",
+      "ubicacion": "San José",
+      "email": "patricia.herrera@gmail.com",
+      "telefono": "+506 699 111 222",
+      "fecha_registro": "2025-02-01",
+      "entregas": [
+        { "id": 110, "producto": "Reloj Inteligente Garmin", "fecha_entrega": "2025-02-15", "estado": "En curso", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 11,
+      "nombre": "Diego Ramírez",
+      "ubicacion": "San José",
+      "email": "diego.ramirez@gmail.com",
+      "telefono": "+506 611 222 333",
+      "fecha_registro": "2025-02-05",
+      "entregas": [
+        { "id": 115, "producto": "Bicicleta Trek", "fecha_entrega": "2025-02-28", "estado": "En curso", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 12,
+      "nombre": "Valeria Castro",
+      "ubicacion": "Cartago",
+      "email": "valeria.castro@yahoo.com",
+      "telefono": "+506 699 333 444",
+      "fecha_registro": "2025-02-08",
+      "entregas": [
+        { "id": 116, "producto": "Echo Dot Amazon", "fecha_entrega": "2025-02-25", "estado": "Entregado", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 13,
+      "nombre": "Ricardo Solís",
+      "ubicacion": "Heredia",
+      "email": "ricardo.solis@hotmail.com",
+      "telefono": "+506 633 444 555",
+      "fecha_registro": "2025-02-10",
+      "entregas": [
+        { "id": 117, "producto": "Silla Gamer Cougar", "fecha_entrega": "2025-03-05", "estado": "En curso", "repartidor_id": 4 }
+      ]
+    },
+    {
+      "id": 14,
+      "nombre": "Andrea Mora",
+      "ubicacion": "Alajuela",
+      "email": "andrea.mora@outlook.com",
+      "telefono": "+506 622 555 666",
+      "fecha_registro": "2025-02-12",
+      "entregas": [
+        { "id": 118, "producto": "iPhone 15 Pro", "fecha_entrega": "2025-03-01", "estado": "En curso", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 15,
+      "nombre": "Gabriel Vargas",
+      "ubicacion": "San José",
+      "email": "gabriel.vargas@gmail.com",
+      "telefono": "+506 644 666 777",
+      "fecha_registro": "2025-02-15",
+      "entregas": [
+        { "id": 119, "producto": "MacBook Air M2", "fecha_entrega": "2025-02-20", "estado": "Entregado", "repartidor_id": 5 }
+      ]
+    },
+    {
+      "id": 16,
+      "nombre": "Laura Méndez",
+      "ubicacion": "Heredia",
+      "email": "laura.mendez@gmail.com",
+      "telefono": "+506 677 777 888",
+      "fecha_registro": "2025-02-18",
+      "entregas": [
+        { "id": 120, "producto": "Samsung Galaxy S24", "fecha_entrega": "2025-03-08", "estado": "En curso", "repartidor_id": 2 }
       ]
     },
     {
       "id": 17,
-      "nombre": "Rafael Mendoza",
-      "ubicacion": "Vigo",
-      "email": "rafael.mendoza@outlook.com",
-      "telefono": "+34 611 123 456",
-      "fecha_registro": "2024-11-15",
+      "nombre": "Kevin Sánchez",
+      "ubicacion": "Cartago",
+      "email": "kevin.sanchez@hotmail.com",
+      "telefono": "+506 633 888 999",
+      "fecha_registro": "2025-02-20",
       "entregas": [
-        {
-          "id": 112,
-          "producto": "Smart TV Samsung",
-          "fecha_entrega": "2025-01-28",
-          "estado": "Entregado",
-          "repartidor_id": 1
-        }
+        { "id": 121, "producto": "Xbox Series X", "fecha_entrega": "2025-03-12", "estado": "En curso", "repartidor_id": 1 }
       ]
     },
     {
       "id": 18,
-      "nombre": "Isabel Romero",
-      "ubicacion": "León",
-      "email": "isabel.romero@yahoo.com",
-      "telefono": "+34 633 654 987",
-      "fecha_registro": "2024-12-10",
-      "entregas": []
+      "nombre": "Daniela Jiménez",
+      "ubicacion": "San José",
+      "email": "daniela.jimenez@outlook.com",
+      "telefono": "+506 622 999 000",
+      "fecha_registro": "2025-02-22",
+      "entregas": [
+        { "id": 122, "producto": "Nintendo Switch OLED", "fecha_entrega": "2025-03-15", "estado": "En curso", "repartidor_id": 4 }
+      ]
     },
     {
       "id": 19,
-      "nombre": "Francisco Suárez",
-      "ubicacion": "Badajoz",
-      "email": "francisco.suarez@hotmail.com",
-      "telefono": "+34 655 888 444",
-      "fecha_registro": "2024-12-20",
+      "nombre": "Sergio León",
+      "ubicacion": "Alajuela",
+      "email": "sergio.leon@gmail.com",
+      "telefono": "+506 644 000 111",
+      "fecha_registro": "2025-02-25",
       "entregas": [
-        {
-          "id": 113,
-          "producto": "Impresora Epson",
-          "fecha_entrega": "2025-02-18",
-          "estado": "En curso",
-          "repartidor_id": 5
-        }
+        { "id": 123, "producto": "GoPro Hero 12", "fecha_entrega": "2025-03-18", "estado": "En curso", "repartidor_id": 3 }
       ]
     },
     {
       "id": 20,
-      "nombre": "Natalia Herrera",
-      "ubicacion": "Pamplona",
-      "email": "natalia.herrera@gmail.com",
-      "telefono": "+34 699 333 555",
-      "fecha_registro": "2025-01-05",
-      "entregas": []
+      "nombre": "Natalia Rojas",
+      "ubicacion": "Heredia",
+      "email": "natalia.rojas@yahoo.com",
+      "telefono": "+506 655 111 222",
+      "fecha_registro": "2025-02-28",
+      "entregas": [
+        { "id": 124, "producto": "Audífonos Sony WH-1000XM5", "fecha_entrega": "2025-03-20", "estado": "Entregado", "repartidor_id": 5 }
+      ]
     },
     {
       "id": 21,
-      "nombre": "Gonzalo Ramírez",
-      "ubicacion": "Santander",
-      "email": "gonzalo.ramirez@outlook.com",
-      "telefono": "+34 611 777 999",
-      "fecha_registro": "2025-01-14",
+      "nombre": "Oscar Núñez",
+      "ubicacion": "San José",
+      "email": "oscar.nunez@gmail.com",
+      "telefono": "+506 611 333 222",
+      "fecha_registro": "2025-02-28",
       "entregas": [
-        {
-          "id": 114,
-          "producto": "Consola PlayStation 5",
-          "fecha_entrega": "2025-02-12",
-          "estado": "Entregado",
-          "repartidor_id": 3
-        }
+        { "id": 125, "producto": "Cámara GoPro", "fecha_entrega": "2025-03-22", "estado": "En curso", "repartidor_id": 2 }
       ]
     },
     {
       "id": 22,
-      "nombre": "Valeria Ortega",
-      "ubicacion": "Burgos",
-      "email": "valeria.ortega@gmail.com",
-      "telefono": "+34 688 999 222",
-      "fecha_registro": "2025-01-22",
+      "nombre": "Mariana Pineda",
+      "ubicacion": "Cartago",
+      "email": "mariana.pineda@yahoo.com",
+      "telefono": "+506 622 444 333",
+      "fecha_registro": "2025-02-27",
       "entregas": [
-        {
-          "id": 115,
-          "producto": "Portátil Lenovo",
-          "fecha_entrega": "2025-02-22",
-          "estado": "En curso",
-          "repartidor_id": 2
-        }
+        { "id": 126, "producto": "iPad Air", "fecha_entrega": "2025-03-18", "estado": "Entregado", "repartidor_id": 3 }
       ]
     },
     {
       "id": 23,
-      "nombre": "Mario Castillo",
-      "ubicacion": "Logroño",
-      "email": "mario.castillo@yahoo.com",
-      "telefono": "+34 633 555 111",
-      "fecha_registro": "2025-02-02",
-      "entregas": []
+      "nombre": "Rodrigo Salas",
+      "ubicacion": "Heredia",
+      "email": "rodrigo.salas@hotmail.com",
+      "telefono": "+506 633 555 444",
+      "fecha_registro": "2025-01-26",
+      "entregas": [
+        { "id": 127, "producto": "Laptop Asus ROG", "fecha_entrega": "2025-03-25", "estado": "En curso", "repartidor_id": 1 }
+      ]
     },
     {
       "id": 24,
-      "nombre": "Alejandra Fernández",
-      "ubicacion": "Salamanca",
-      "email": "alejandra.fernandez@hotmail.com",
-      "telefono": "+34 644 222 666",
-      "fecha_registro": "2025-02-08",
+      "nombre": "Silvia Araya",
+      "ubicacion": "Alajuela",
+      "email": "silvia.araya@outlook.com",
+      "telefono": "+506 644 666 555",
+      "fecha_registro": "2025-01-25",
       "entregas": [
-        {
-          "id": 116,
-          "producto": "Tablet Samsung",
-          "fecha_entrega": "2025-02-24",
-          "estado": "En curso",
-          "repartidor_id": 1
-        }
+        { "id": 128, "producto": "Auriculares Beats", "fecha_entrega": "2025-03-21", "estado": "Entregado", "repartidor_id": 4 }
       ]
     },
     {
       "id": 25,
-      "nombre": "Fernando Álvarez",
-      "ubicacion": "Cádiz",
-      "email": "fernando.alvarez@gmail.com",
-      "telefono": "+34 699 444 777",
-      "fecha_registro": "2025-02-10",
-      "entregas": []
+      "nombre": "Héctor Ramírez",
+      "ubicacion": "San José",
+      "email": "hector.ramirez@gmail.com",
+      "telefono": "+506 655 777 666",
+      "fecha_registro": "2024-12-24",
+      "entregas": [
+        { "id": 129, "producto": "Reloj Apple Watch", "fecha_entrega": "2025-03-28", "estado": "En curso", "repartidor_id": 5 }
+      ]
     },
     {
       "id": 26,
-      "nombre": "Camila Gutiérrez",
-      "ubicacion": "Málaga",
-      "email": "camila.gutierrez@outlook.com",
-      "telefono": "+34 611 888 333",
-      "fecha_registro": "2025-02-12",
+      "nombre": "Vanessa Jiménez",
+      "ubicacion": "Heredia",
+      "email": "vanessa.jimenez@gmail.com",
+      "telefono": "+506 666 888 777",
+      "fecha_registro": "2024-12-23",
       "entregas": [
-        {
-          "id": 117,
-          "producto": "Monitor Samsung 4K",
-          "fecha_entrega": "2025-02-26",
-          "estado": "En curso",
-          "repartidor_id": 3
-        }
+        { "id": 130, "producto": "Teclado Corsair", "fecha_entrega": "2025-03-27", "estado": "En curso", "repartidor_id": 3 }
       ]
     },
     {
       "id": 27,
-      "nombre": "Rodrigo Pérez",
-      "ubicacion": "Almería",
-      "email": "rodrigo.perez@gmail.com",
-      "telefono": "+34 655 777 444",
-      "fecha_registro": "2025-02-15",
-      "entregas": []
+      "nombre": "Cristian Navarro",
+      "ubicacion": "Cartago",
+      "email": "cristian.navarro@hotmail.com",
+      "telefono": "+506 677 999 888",
+      "fecha_registro": "2024-12-22",
+      "entregas": [
+        { "id": 131, "producto": "Cámara Nikon", "fecha_entrega": "2025-03-30", "estado": "En curso", "repartidor_id": 2 }
+      ]
     },
     {
       "id": 28,
-      "nombre": "Sofía Navarro",
-      "ubicacion": "Zamora",
-      "email": "sofia.navarro@yahoo.com",
-      "telefono": "+34 644 333 222",
-      "fecha_registro": "2025-02-16",
+      "nombre": "Isabela Montero",
+      "ubicacion": "Alajuela",
+      "email": "isabela.montero@outlook.com",
+      "telefono": "+506 688 000 999",
+      "fecha_registro": "2025-02-21",
       "entregas": [
-        {
-          "id": 118,
-          "producto": "Cámara Nikon",
-          "fecha_entrega": "2025-02-28",
-          "estado": "En curso",
-          "repartidor_id": 5
-        }
+        { "id": 132, "producto": "Monitor Dell", "fecha_entrega": "2025-03-24", "estado": "Entregado", "repartidor_id": 4 }
       ]
     },
     {
       "id": 29,
-      "nombre": "Antonio Serrano",
-      "ubicacion": "Huelva",
-      "email": "antonio.serrano@hotmail.com",
-      "telefono": "+34 688 222 111",
-      "fecha_registro": "2025-02-18",
-      "entregas": []
+      "nombre": "Fernando Rojas",
+      "ubicacion": "San José",
+      "email": "fernando.rojas@gmail.com",
+      "telefono": "+506 699 111 000",
+      "fecha_registro": "2025-02-20",
+      "entregas": [
+        { "id": 133, "producto": "Router TP-Link", "fecha_entrega": "2025-03-26", "estado": "En curso", "repartidor_id": 5 }
+      ]
     },
     {
       "id": 30,
-      "nombre": "Esteban Lozano",
-      "ubicacion": "Ceuta",
-      "email": "esteban.lozano@gmail.com",
-      "telefono": "+34 699 555 666",
+      "nombre": "Diana Valverde",
+      "ubicacion": "Heredia",
+      "email": "diana.valverde@gmail.com",
+      "telefono": "+506 600 222 111",
       "fecha_registro": "2025-02-19",
       "entregas": [
-        {
-          "id": 119,
-          "producto": "Router WiFi ASUS",
-          "fecha_entrega": "2025-03-01",
-          "estado": "Pendiente",
-          "repartidor_id": 2
-        }
+        { "id": 134, "producto": "Bocina Sonos", "fecha_entrega": "2025-03-29", "estado": "En curso", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 31,
+      "nombre": "Gustavo Méndez",
+      "ubicacion": "San José",
+      "email": "gustavo.mendez@gmail.com",
+      "telefono": "+506 601 111 222",
+      "fecha_registro": "2024-10-15",
+      "entregas": [
+        { "id": 135, "producto": "Impresora Epson", "fecha_entrega": "2024-11-20", "estado": "Entregado", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 32,
+      "nombre": "Laura Castillo",
+      "ubicacion": "Heredia",
+      "email": "laura.castillo@yahoo.com",
+      "telefono": "+506 602 222 333",
+      "fecha_registro": "2024-09-10",
+      "entregas": [
+        { "id": 136, "producto": "Laptop HP", "fecha_entrega": "2024-11-25", "estado": "Entregado", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 33,
+      "nombre": "Mauricio León",
+      "ubicacion": "Cartago",
+      "email": "mauricio.leon@hotmail.com",
+      "telefono": "+506 603 333 444",
+      "fecha_registro": "2024-08-05",
+      "entregas": [
+        { "id": 137, "producto": "Monitor BenQ", "fecha_entrega": "2024-10-15", "estado": "Entregado", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 34,
+      "nombre": "Elena Vargas",
+      "ubicacion": "Alajuela",
+      "email": "elena.vargas@outlook.com",
+      "telefono": "+506 604 444 555",
+      "fecha_registro": "2024-07-20",
+      "entregas": [
+        { "id": 138, "producto": "Auriculares Sony", "fecha_entrega": "2024-09-10", "estado": "Entregado", "repartidor_id": 4 }
+      ]
+    },
+    {
+      "id": 35,
+      "nombre": "Ricardo Solano",
+      "ubicacion": "San José",
+      "email": "ricardo.solano@gmail.com",
+      "telefono": "+506 605 555 666",
+      "fecha_registro": "2024-06-30",
+      "entregas": [
+        { "id": 139, "producto": "Teclado Logitech", "fecha_entrega": "2024-08-18", "estado": "Entregado", "repartidor_id": 5 }
+      ]
+    },
+    {
+      "id": 36,
+      "nombre": "Andrea Méndez",
+      "ubicacion": "Heredia",
+      "email": "andrea.mendez@gmail.com",
+      "telefono": "+506 606 666 777",
+      "fecha_registro": "2024-05-15",
+      "entregas": [
+        { "id": 140, "producto": "Smartwatch Fitbit", "fecha_entrega": "2024-07-25", "estado": "Entregado", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 37,
+      "nombre": "David Porras",
+      "ubicacion": "Cartago",
+      "email": "david.porras@hotmail.com",
+      "telefono": "+506 607 777 888",
+      "fecha_registro": "2024-12-10",
+      "entregas": [
+        { "id": 141, "producto": "Reloj Casio", "fecha_entrega": "2024-06-12", "estado": "Entregado", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 38,
+      "nombre": "Karina Espinoza",
+      "ubicacion": "Alajuela",
+      "email": "karina.espinoza@outlook.com",
+      "telefono": "+506 608 888 999",
+      "fecha_registro": "2024-11-05",
+      "entregas": [
+        { "id": 142, "producto": "Consola Xbox Series X", "fecha_entrega": "2024-05-30", "estado": "Entregado", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 39,
+      "nombre": "Jorge Ramírez",
+      "ubicacion": "San José",
+      "email": "jorge.ramirez@gmail.com",
+      "telefono": "+506 609 999 000",
+      "fecha_registro": "2024-11-25",
+      "entregas": [
+        { "id": 143, "producto": "Cámara Sony", "fecha_entrega": "2024-04-22", "estado": "Entregado", "repartidor_id": 5 }
+      ]
+    },
+    {
+      "id": 40,
+      "nombre": "Daniela Soto",
+      "ubicacion": "Heredia",
+      "email": "daniela.soto@gmail.com",
+      "telefono": "+506 610 000 111",
+      "fecha_registro": "2024-11-10",
+      "entregas": [
+        { "id": 144, "producto": "Bocina JBL", "fecha_entrega": "2024-03-15", "estado": "Entregado", "repartidor_id": 4 }
+      ]
+    },
+    {
+      "id": 41,
+      "nombre": "Hugo Cordero",
+      "ubicacion": "Cartago",
+      "email": "hugo.cordero@gmail.com",
+      "telefono": "+506 611 111 222",
+      "fecha_registro": "2024-12-15",
+      "entregas": [
+        { "id": 145, "producto": "Smart TV LG", "fecha_entrega": "2024-02-20", "estado": "Entregado", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 42,
+      "nombre": "Rosa Jiménez",
+      "ubicacion": "Alajuela",
+      "email": "rosa.jimenez@yahoo.com",
+      "telefono": "+506 612 222 333",
+      "fecha_registro": "2024-11-10",
+      "entregas": [
+        { "id": 146, "producto": "Cafetera Dolce Gusto", "fecha_entrega": "2024-01-30", "estado": "Entregado", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 43,
+      "nombre": "Pablo Rojas",
+      "ubicacion": "San José",
+      "email": "pablo.rojas@hotmail.com",
+      "telefono": "+506 613 333 444",
+      "fecha_registro": "2024-11-05",
+      "entregas": [
+        { "id": 147, "producto": "Parlante Bose", "fecha_entrega": "2023-12-15", "estado": "Entregado", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 44,
+      "nombre": "Fernanda Salazar",
+      "ubicacion": "Heredia",
+      "email": "fernanda.salazar@outlook.com",
+      "telefono": "+506 614 444 555",
+      "fecha_registro": "2024-11-20",
+      "entregas": [
+        { "id": 148, "producto": "Laptop ASUS", "fecha_entrega": "2023-11-10", "estado": "Entregado", "repartidor_id": 4 }
+      ]
+    },
+    {
+      "id": 45,
+      "nombre": "José Araya",
+      "ubicacion": "Cartago",
+      "email": "jose.araya@gmail.com",
+      "telefono": "+506 615 555 666",
+      "fecha_registro": "2024-11-30",
+      "entregas": [
+        { "id": 149, "producto": "Mouse Razer", "fecha_entrega": "2023-10-18", "estado": "Entregado", "repartidor_id": 5 }
+      ]
+    },
+    {
+      "id": 46,
+      "nombre": "Sofía Castro",
+      "ubicacion": "Alajuela",
+      "email": "sofia.castro@gmail.com",
+      "telefono": "+506 616 666 777",
+      "fecha_registro": "2024-11-15",
+      "entregas": [
+        { "id": 150, "producto": "iPad Air", "fecha_entrega": "2023-09-25", "estado": "Entregado", "repartidor_id": 2 }
+      ]
+    },
+    {
+      "id": 47,
+      "nombre": "Rodrigo Marín",
+      "ubicacion": "San José",
+      "email": "rodrigo.marin@hotmail.com",
+      "telefono": "+506 617 777 888",
+      "fecha_registro": "2024-11-10",
+      "entregas": [
+        { "id": 151, "producto": "Cámara Nikon", "fecha_entrega": "2023-08-12", "estado": "Entregado", "repartidor_id": 3 }
+      ]
+    },
+    {
+      "id": 48,
+      "nombre": "Natalia Guzmán",
+      "ubicacion": "Heredia",
+      "email": "natalia.guzman@outlook.com",
+      "telefono": "+506 618 888 999",
+      "fecha_registro": "2024-10-05",
+      "entregas": [
+        { "id": 152, "producto": "Consola Nintendo Switch", "fecha_entrega": "2023-07-30", "estado": "Entregado", "repartidor_id": 1 }
+      ]
+    },
+    {
+      "id": 49,
+      "nombre": "Gabriel Molina",
+      "ubicacion": "Cartago",
+      "email": "gabriel.molina@gmail.com",
+      "telefono": "+506 619 999 000",
+      "fecha_registro": "2024-10-25",
+      "entregas": [
+        { "id": 153, "producto": "Teclado Corsair", "fecha_entrega": "2023-06-22", "estado": "Entregado", "repartidor_id": 5 }
+      ]
+    },
+    {
+      "id": 50,
+      "nombre": "Valeria Ureña",
+      "ubicacion": "San José",
+      "email": "valeria.urena@gmail.com",
+      "telefono": "+506 620 000 111",
+      "fecha_registro": "2024-10-10",
+      "entregas": [
+        { "id": 154, "producto": "Reloj Apple Watch", "fecha_entrega": "2023-05-15", "estado": "Entregado", "repartidor_id": 4 }
       ]
     }
     
   ],
-    "repartidores": [
-      {
-        "id": 1,
-        "nombre": "Juan Pérez",
-        "total_entregas": 15,
-        "tiempo_promedio": "30 min",
-        "satisfaccion_promedio": 4.7,
-        "ruta": "Madrid - Barcelona"
-      },
-      {
-        "id": 2,
-        "nombre": "Laura García",
-        "total_entregas": 20,
-        "tiempo_promedio": "35 min",
-        "satisfaccion_promedio": 4.6,
-        "ruta": "Sevilla - Valencia"
-      },
-      {
-        "id": 3,
-        "nombre": "Carlos Rodríguez",
-        "total_entregas": 12,
-        "tiempo_promedio": "28 min",
-        "satisfaccion_promedio": 4.8,
-        "ruta": "Madrid - Valencia"
-      },
-      {
-        "id": 4,
-        "nombre": "Marta Fernández",
-        "total_entregas": 18,
-        "tiempo_promedio": "32 min",
-        "satisfaccion_promedio": 4.5,
-        "ruta": "Barcelona - Valencia"
-      },
-      {
-        "id": 5,
-        "nombre": "Pedro Jiménez",
-        "total_entregas": 25,
-        "tiempo_promedio": "25 min",
-        "satisfaccion_promedio": 4.9,
-        "ruta": "Sevilla - Madrid"
-      }
-    ],
+  "repartidores": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "total_entregas": 6,
+      "tiempo_promedio": "30 min",
+      "satisfaccion_promedio": 4.7,
+      "ruta": "San José - Alajuela"
+    },
+    {
+      "id": 2,
+      "nombre": "Laura García",
+      "total_entregas": 10,
+      "tiempo_promedio": "35 min",
+      "satisfaccion_promedio": 4.6,
+      "ruta": "Cartago - Heredia"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Rodríguez",
+      "total_entregas": 10,
+      "tiempo_promedio": "28 min",
+      "satisfaccion_promedio": 4.8,
+      "ruta": "San José - Cartago"
+    },
+    {
+      "id": 4,
+      "nombre": "Marta Fernández",
+      "total_entregas": 4,
+      "tiempo_promedio": "32 min",
+      "satisfaccion_promedio": 4.5,
+      "ruta": "Heredia - Alajuela"
+    },
+    {
+      "id": 5,
+      "nombre": "Luis Gómez",
+      "total_entregas": 3,
+      "tiempo_promedio": "40 min",
+      "satisfaccion_promedio": 4.3,
+      "ruta": "San José - Heredia"
+    }
+  ],
     "entregas": [
       {
         "id": 1,

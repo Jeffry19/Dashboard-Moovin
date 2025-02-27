@@ -5,12 +5,13 @@ import GetClientes from "../../services/Clientes/Get";
 export default function ClientesPorMesChart() {
   const [clientesPorMes, setClientesPorMes] = useState({});
 
+  // Obtiene los clientes y los agrupa por mes
   useEffect(() => {
     async function fetchClientes() {
       try {
         const clientes = await GetClientes();
 
-        // Agrupar clientes por mes
+        // Agrupar clientes según el mes de registro
         const clientesPorMesData = clientes.reduce((acc, cliente) => {
           const mes = new Date(cliente.fecha_registro).toLocaleString("es-ES", {
             month: "long",
@@ -30,43 +31,20 @@ export default function ClientesPorMesChart() {
     fetchClientes();
   }, []);
 
-  // Configuración de ECharts
+  // Configuración del gráfico
   const options = {
-    title: {
-      text: "Clientes Registrados por Mes",
-      left: "center",
-    },
-    tooltip: {
-      trigger: "axis",
-      axisPointer: {
-        type: "shadow",
-      },
-    },
-    legend: {
-      data: ["Clientes"],
-      bottom: 0,
-    },
-    grid: {
-      left: "3%",
-      right: "4%",
-      bottom: "10%",
-      containLabel: true,
-    },
-    xAxis: {
-      type: "category",
-      data: Object.keys(clientesPorMes), // Meses en el eje X
-    },
-    yAxis: {
-      type: "value",
-    },
+    title: { text: "Clientes Registrados por Mes", left: "center" },
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+    legend: { data: ["Clientes"], bottom: 0 },
+    grid: { left: "3%", right: "4%", bottom: "10%", containLabel: true },
+    xAxis: { type: "category", data: Object.keys(clientesPorMes) },
+    yAxis: { type: "value" },
     series: [
       {
         name: "Clientes",
         type: "bar",
-        data: Object.values(clientesPorMes), // Cantidad de clientes por mes
-        itemStyle: {
-          color: "#4CAF50",
-        },
+        data: Object.values(clientesPorMes),
+        itemStyle: { color: "#4CAF50" },
       },
     ],
   };
@@ -77,4 +55,3 @@ export default function ClientesPorMesChart() {
     </div>
   );
 }
-

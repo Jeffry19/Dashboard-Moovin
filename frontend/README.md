@@ -1,8 +1,44 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un dashboard desarrollado en React con Vite, utilizando Material UI, Apache ECharts y una base de datos de prueba en db.json para simular la información de entrgas, clientes y repartidores.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Creación del Proyecto con Vite
+
+Para iniciar el proyecto con Vite y React, se ejecutó:
+npm create vite@latest mi-dashboard --template react
+cd frontend
+npm install
+
+Material UI (Interfaz de usuario)
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
+
+ JSON Server (Base de datos de prueba para simular una API)
+ npm install -g json-server
+
+  Apache ECharts for React (Gráficos interactivos)
+  npm install echarts-for-react echarts
+
+
+  Estructura del Proyecto
+  frontend/
+│── src/
+│   ├── components/
+│   │   ├── Table/ (Tabla de clientes)
+│   │   ├── Echart/ (Gráficos con ECharts)
+│   ├── pages/
+|   |   ├──layouts(componente de material UI dasboard)
+│   │   ├── Phome/ (Página principal)
+│   ├── services/
+│   │   ├── Get.js (Manejo de solicitudes POST)
+│   ├── App.jsx
+│   ├── main.jsx
+│── public/
+│── db.json (Base de datos de prueba)
+│── package.json
+│── README.md
+
+Ejecución del Proyecto
+
+json-server --watch db.json --port 5000
+
+npm run dev

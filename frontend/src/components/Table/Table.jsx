@@ -4,7 +4,6 @@ import { DataGrid } from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';
 import { Typography, Modal, Box, Button, TextField } from '@mui/material';
 import GetClientes from '../../services/Clientes/Get';
-import SearchIcon from '@mui/icons-material/Search';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -15,6 +14,7 @@ const columns = [
 ];
 
 export default function DataTable() {
+  // Estado para almacenar los clientes y la versión filtrada
   const [clientes, setClientes] = useState([]);
   const [filteredClientes, setFilteredClientes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -22,6 +22,7 @@ export default function DataTable() {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState('');
 
+  // Cargar los clientes al montar el componente
   useEffect(() => {
     async function fetchClientes() {
       try {
@@ -37,17 +38,19 @@ export default function DataTable() {
     fetchClientes();
   }, []);
 
+  // Manejo de clic en una fila para abrir el modal
   const handleRowClick = (params) => {
     setSelectedCliente(params.row);
     setOpen(true);
   };
 
+  // Cerrar el modal
   const handleClose = () => {
     setOpen(false);
     setSelectedCliente(null);
   };
 
-  // Función de búsqueda
+  // Función de búsqueda para filtrar clientes
   const handleSearch = (event) => {
     const value = event.target.value.toLowerCase();
     setSearch(value);
@@ -57,6 +60,7 @@ export default function DataTable() {
       return;
     }
 
+    // Filtrar clientes en función del texto ingresado
     const filtered = clientes.filter(
       (cliente) =>
         cliente.nombre.toLowerCase().includes(value) ||
@@ -75,7 +79,7 @@ export default function DataTable() {
           Lista de Clientes Registrados
         </Typography>
 
-        {/* Campo de Búsqueda */}
+        {/* Campo de búsqueda */}
         <TextField
           label="Buscar cliente..."
           variant="outlined"
@@ -85,7 +89,7 @@ export default function DataTable() {
           sx={{ marginBottom: 2 }}
         />
 
-        {/* Tabla de Clientes */}
+        {/* Tabla de clientes */}
         <DataGrid
           rows={filteredClientes}
           columns={columns}
@@ -97,7 +101,7 @@ export default function DataTable() {
         />
       </Paper>
 
-      {/* Modal para mostrar el historial de entregas */}
+      {/* Modal para mostrar el historial de entregas del cliente */}
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{
